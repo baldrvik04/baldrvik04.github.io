@@ -99,9 +99,9 @@
 </section>
 <section aria-labelledby="tit-proyectos" class="section" id="proyectos">
 <div class="head"><span class="number">04 /</span><h2 data-i18n="48" id="tit-proyectos">Infraestructura de seguridad</h2></div>
-<p class="notice" data-i18n="49">Componentes operativos del laboratorio y siguientes integraciones, diferenciados del diseño de productos.</p>
+<p class="notice" data-i18n="49">Seguridad de infraestructura local y gobierno de identidades en AWS: experiencia profesional, componentes operativos y siguientes integraciones.</p>
 <div class="projects"><article class="project"><div class="top"><span class="kind" data-i18n="120">Laboratorio · Seguridad</span><span class="stage" data-i18n="121">Componentes operativos</span></div><h3 data-i18n="122">Perímetro y SOC local</h3><p data-i18n="123">Firewall/router Fedora con firewalld, DHCP, DNS, VPN y Suricata en modo IDS. Wazuh 4.14.6 central desplegado en Docker: Manager, Indexer y Dashboard operativos, acceso por Tailscale y tres contenedores sin reinicios durante la prueba.</p><p data-i18n="124">Pendientes: agentes Wazuh, ingesta Suricata–Wazuh, Zabbix y validación integral de recuperación. El servidor central operativo no equivale a monitoreo completo de endpoints.</p></article>
-</div>
+<article class="project"><div class="top"><span class="kind" data-i18n="240">AWS · Identidad y gobierno</span><span class="stage" data-i18n="241">Experiencia profesional</span></div><h3 data-i18n="242">Gobierno multicuenta y automatización de accesos</h3><p data-i18n="243">Administración y revisión de accesos en entornos AWS multicuenta con Organizations, IAM e IAM Identity Center. Gestión de usuarios, grupos, roles, políticas y Permission Sets; federación SAML y sesiones temporales con STS/AssumeRole.</p><p data-i18n="244">Conocimientos aplicados de control de acceso por roles y atributos —RBAC y ABAC—, políticas de control de servicios —SCP— y permisos asignados por grupos. Revisión del alcance de políticas, permisos efectivos y separación de responsabilidades entre cuentas y funciones.</p><p data-i18n="245">Uso de Python, AWS CLI y CloudShell para apoyar auditorías de identidades, membresías, asignaciones y credenciales; identificar permisos excesivos, accesos obsoletos y claves de larga duración; y transformar hallazgos en acciones de remediación priorizadas por riesgo y mínimo privilegio.</p></article></div>
 </section>
 <section aria-labelledby="tit-herramientas" class="section" id="herramientas">
 <div class="head"><span class="number">05 /</span><h2 data-i18n="66" id="tit-herramientas">Stack y herramientas</h2></div>
@@ -177,7 +177,7 @@ const en = {
   "46": "September 2012 – September 2016",
   "47": "Supported enterprise clients, monitored Unix/Windows environments, managed critical alerts, and handled operational escalations.",
   "48": "Security infrastructure",
-  "49": "Operational lab components and upcoming integrations, separate from product design.",
+  "49": "Local infrastructure security and AWS identity governance: professional experience, operational components, and upcoming integrations.",
   "50": "Governance · Compliance",
   "51": "Design & development",
   "52": "ISO / GRC Platform",
@@ -254,7 +254,13 @@ const en = {
   "232": "AI-assisted development and context engineering",
   "233": "I use OpenAI tools, including GPT and Codex, to structure project context, analyze requirements and architectural decisions, and support implementation, diagnostics, and technical review. I organize work through specifications, constraints, and acceptance criteria to maintain continuity and traceability across tasks.",
   "234": "Cursor, with Sonnet and Opus models, is my development environment for critical-scope tasks: code implementation and refactoring, security analysis, change review, and test generation. I provide repository context and define the scope of each intervention, validating results through technical review and tests before integration or deployment.",
-  "235": "I complement this workflow with the local RAG integrated with Continue and multi-agent experimentation for analysis and review. Model assistance is incorporated into an engineering process with change control and human oversight."
+  "235": "I complement this workflow with the local RAG integrated with Continue and multi-agent experimentation for analysis and review. Model assistance is incorporated into an engineering process with change control and human oversight.",
+  "240": "AWS · Identity and governance",
+  "241": "Professional experience",
+  "242": "Multi-account governance and access automation",
+  "243": "Access administration and review in multi-account AWS environments using Organizations, IAM, and IAM Identity Center. Management of users, groups, roles, policies, and Permission Sets; SAML federation and temporary sessions with STS/AssumeRole.",
+  "244": "Applied knowledge of role-based and attribute-based access control —RBAC and ABAC—, Service Control Policies —SCPs—, and group-based permission assignments. Review of policy scope, effective permissions, and separation of responsibilities across accounts and functions.",
+  "245": "Use of Python, AWS CLI, and CloudShell to support audits of identities, memberships, assignments, and credentials; identify excessive permissions, obsolete access, and long-lived keys; and translate findings into remediation actions prioritized by risk and least privilege."
 };
 const original = Object.fromEntries(
   Array.from(document.querySelectorAll('[data-i18n]'), el => [el.dataset.i18n, el.textContent])
