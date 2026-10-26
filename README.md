@@ -2,9 +2,9 @@
 
 # Francisco Miguel Inostroza Donoso
 
-### Cybersecurity & Technology Leadership · Cloud Security · IT Operations · Business Continuity
+### Applied AI & RAG · Cybersecurity & Technology Leadership · Cloud Security
 
-**Chile** · [LinkedIn](https://www.linkedin.com/in/franciscoinostroza-donoso-006454101/) · [Correo](mailto:fco.id@hotmail.com) · [Currículum completo](CV.md)
+**Chile** · [LinkedIn](https://www.linkedin.com/in/franciscoinostroza-donoso-006454101/) · [Correo](mailto:fco.id@hotmail.com) · [CV web](https://baldrvik04.github.io/)
 
 </div>
 
@@ -27,6 +27,16 @@ Mi experiencia combina visión de negocio con ejecución técnica en **AWS, IAM,
 | **Continuidad y resiliencia** | Gestión de incidentes mayores, DRP, recuperación, SLA/SLI y disponibilidad de servicios. |
 | **Ingeniería y automatización** | Python, JavaScript/TypeScript, APIs, PostgreSQL, Redis, Docker y flujos asistidos por IA. |
 
+## Inteligencia artificial aplicada
+
+**RAG local operativo en laboratorio personal.** Diseño y desarrollo en Python 3.12, Ollama, PostgreSQL 17/pgvector, Docker Compose y FastAPI. Ingesta incremental por hash, persistencia transaccional, embeddings nomic-embed-text de 768 dimensiones, recuperación híbrida semántica y léxica con RRF, reranking y respuestas con citas a repositorio, archivo y líneas. El MVP documentado utiliza Qwen 2.5 Coder 14B.
+
+**Resultados documentados:** 376 archivos de dos repositorios, 579 fragmentos, cero duplicados lógicos y cero errores de ingesta; 40 pruebas finales reportadas como correctas. API autenticada, salud HTTP 200 y rechazo HTTP 401 sin credencial; API y PostgreSQL publicados solo en loopback, filtros de secretos y volúmenes de lectura.
+
+**IA diaria y agentes:** uso de ChatGPT, Cursor y Antigravity para diagnóstico, desarrollo, revisión, documentación y pruebas. Experimentación multiagente con supervisión humana. Integración Continue–RAG por túneles SSH y endpoint autenticado con HTTP 200 documentado.
+
+**Pendiente:** selección dinámica de repositorio y aislamiento de contexto en Continue; integración MCP y tool calling sujetos a validación; evaluación sistemática del RAG, automatización de ingesta y pruebas de restauración. El vSOC multiagente sigue en diseño de arquitectura.
+
 ## 💼 Trayectoria destacada
 
 - **Cumplo** · Líder de Ciberseguridad y Continuidad Operativa · **2022–2026**. Gobierno de accesos AWS, remediación de privilegios, federación de identidades, seguridad cloud, automatización con Terraform y continuidad del servicio.
@@ -37,7 +47,9 @@ Mi experiencia combina visión de negocio con ejecución técnica en **AWS, IAM,
 
 ## 🧪 Proyectos personales y arquitectura de producto
 
-> Los siguientes proyectos reflejan trabajo de diseño, arquitectura y desarrollo en distintas etapas. No se presentan como productos comerciales lanzados.
+> Los estados operativos y de diseño se distinguen por proyecto. Las implementaciones corresponden al laboratorio personal, sin atribuir despliegues comerciales.
+
+**Perímetro y SOC local — componentes operativos.** Firewall/router Fedora con firewalld, DHCP, DNS, VPN y Suricata IDS. Servidor central Wazuh 4.14.6 en Docker con Manager, Indexer y Dashboard operativos; acceso por Tailscale y tres contenedores sin reinicios durante la prueba. Agentes Wazuh, ingesta Suricata–Wazuh, Zabbix y validación integral de recuperación pendientes.
 
 **Plataforma ISO / GRC multi-tenant**  
 Diseño de un SaaS para gestión de cumplimiento y políticas, con aislamiento por tenant, RBAC, flujos Creador → Revisor → Aprobador, controles ISO 27001/27701 y auditoría de acciones.
@@ -71,4 +83,4 @@ Español nativo · Inglés de uso profesional.
 
 ---
 
-<sub>Perfil profesional actualizado en octubre de 2026. Los proyectos personales se describen según su etapa de diseño y desarrollo.</sub>
+<sub>Perfil profesional actualizado en octubre de 2026. Los proyectos personales distinguen componentes operativos, experimentación y diseños pendientes.</sub>
